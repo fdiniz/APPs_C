@@ -7,17 +7,15 @@ main(){
     cin >> he;
     cout << "\n\nINFORME A HORA DA SAIDA E DEPOIS APERTE ENTER: ";
     cin >> hs;
+    ht= hs-he;
     			if(ht <= 1){
        			cout << "\n\n VALOR TOTAL A PAGAR E DE 5 REAIS!";
            		}
     			else{
-           		 ht = hs-he;
             	vt=(((ht - 1) * 3) + 5);
             	cout << "\n\n VALOR TOTAL A PAGAR E DE : ";
            		cout << vt;
-
         }
-
 return 0;
 }
 
