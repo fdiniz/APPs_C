@@ -1,13 +1,16 @@
-#include <iostream>
+//Aplicativo desenvolvido por Fábio Diniz Chaves. Bacharel em Ciência e Tecnologia e acadêmico de Engenharia de Computação da Universidade Federal do Pampa.
+//Esta aplicação foi feita para solucionar o problema de um estacionamento na cidade de Bagé-RS.
+
+#include <iostream> //Bibliotecas 
 #include <stdio.h>
 #include <ctype.h>
 #include <math.h>
 
 using namespace std;
 main(){
-    float he,hs,hsi,ht,vt;
-    int menu,dte,dts,dtsi,nd;
-    cout << "ROTATIVO 1 \n\nPERNOITE 2";
+    float he,hs,hsi,ht,vt; //Variáveis he= Hora de entrada, hs= Hora de saída, hsi= Hora de saida com plus, ht= Hora total, vt= Valor total
+    int menu,dte,dts,dtsi,nd; // Variáveis menu, data de entrada, data de saída, data de saída com plus, número de dias.
+    cout << "ROTATIVO 1 \n\nPERNOITE 2"; // ESCOLHA DE OPÇÕES DE 1 A 2.
     cout << "\n\nDIGITE A OPCAO DESEJADA: ";
     cin >> menu;
     switch (menu){
@@ -18,7 +21,7 @@ main(){
             cout << "\n\nINFORME A HORA DE SAIDA E DEPOIS APERTE ENTER: ";
             cin >> hsi;
             if(hsi < he){
-            hs= hsi + 24;
+            hs= hsi + 24; //ICREMENTO NA HORA DE SAÍDA PARA RESOLVER BUG DE 24 HORAS.
             ht = hs-he;}
             else{
             ht= hsi -he;
@@ -40,7 +43,7 @@ main(){
             cin >> dts;
                     if (dts <= dte)
                     {
-                       dtsi= dts+30;
+                       dtsi= dts+30; //ICREMENTO PARA RESOLVER BUG DA VIRADA DE MÊS
                        nd = (dtsi - dte);
                        cout << "\n\nNUMERO DE PERNOITES FOI DE: ";
                              cout << nd;
