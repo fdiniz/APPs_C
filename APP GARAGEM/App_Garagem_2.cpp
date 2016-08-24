@@ -16,12 +16,12 @@ main(){
     switch (menu){
         case 1 :
         cout << "\n\nROTATIVO DE VEICULOS";
-            cout << "\n\nINFORME A HORA DE ENTRADA DO VEICULO E DEPOIS APERTE ENTER: ";
+            cout << "\n\nINFORME A HORA DE ENTRADA DO VEICULO E DEPOIS APERTE ENTER (Use ponto e não vírgula com o separador decimal): ";
             cin >> he;
-            cout << "\n\nINFORME A HORA DE SAIDA E DEPOIS APERTE ENTER: ";
+            cout << "\n\nINFORME A HORA DE SAIDA E DEPOIS APERTE ENTER (Use ponto e não vírgula com o separador decimal): ";
             cin >> hsi;
             if(hsi < he){
-            hs= hsi + 24; //ICREMENTO NA HORA DE SAÍDA PARA RESOLVER BUG DE 24 HORAS.
+            hs= hsi + 24; //INCREMENTO NA HORA DE SAÍDA PARA RESOLVER BUG DE 24 HORAS.
             ht = hs-he;}
             else{
             ht= hsi -he;
@@ -43,7 +43,7 @@ main(){
             cin >> dts;
                     if (dts <= dte)
                     {
-                       dtsi= dts+30; //ICREMENTO PARA RESOLVER BUG DA VIRADA DE MÊS
+                       dtsi= dts+30; //INCREMENTO PARA RESOLVER BUG DA VIRADA DE MÊS
                        nd = (dtsi - dte);
                        cout << "\n\nNUMERO DE PERNOITES FOI DE: ";
                              cout << nd;
