@@ -19,7 +19,7 @@ main(){
             cin >> hsi;
             if(hsi < he){
             hs= hsi + 24;
-            ht = hsi-he;}
+            ht = hs-he;}
             else{
             ht= hsi -he;
             }
@@ -28,7 +28,6 @@ main(){
             if(ht <= 1){
             cout << "\n\n VALOR TOTAL A PAGAR E DE 5 REAIS!";
                 }else{
-                        if()
                     vt=(((ht-1)*3)+5);
                     cout << "\n\n VALOR TOTAL A PAGAR E DE : ";
                     cout << vt;
